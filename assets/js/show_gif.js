@@ -33,7 +33,7 @@ jQuery(document).ready(function ($) {
     // Función que maneja el evento de mouseover y click
     function handleH1Events() {
         // Selecciona todos los elementos <h1> en la página
-        const  h1Elements = document.querySelectorAll(' h1');
+        const  h1Elements = document.querySelectorAll('h1');
 
         // Añade eventos a cada elemento <a>
         h1Elements.forEach( h1 => {
