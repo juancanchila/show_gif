@@ -58,7 +58,7 @@ jQuery(document).ready(function ($) {
 
         if (videoPath) {
             // Usa la URL completa directamente
-            const fullUrl = `http://localhost/wordpress/${videoPath}`;
+            const fullUrl = `https://epacartagena.gov.co/web/${videoPath}`;
             gifElement.src = fullUrl;
             gifElement.style.display = 'block'; // Asegura que el GIF se muestre
             console.log('GIF actualizado a:', fullUrl);
