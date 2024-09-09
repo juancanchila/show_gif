@@ -1,0 +1,17 @@
+.gif-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999999; /* Un valor extremadamente alto para garantizar que esté por encima de todo */
+    max-width: 150px; /* Ajusta el tamaño del GIF según sea necesario */
+    max-height: 150px;
+    margin: 10px; /* Espacio entre el GIF y el borde de la pantalla */
+    pointer-events: none; /* Evita que el GIF bloquee clics o interacciones en otros elementos */
+}
+
+.gif-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mantiene la proporción del GIF */
+    opacity: 0.8; /* Ajusta la opacidad del GIF */
+}
