@@ -44,11 +44,11 @@ jQuery(document).ready(function ($) {
                 updateGif(videoName);
             });
 
-          /*  // Evento de click
+           // Evento de click
             h1.addEventListener('click', function() {
                 const videoName = this.textContent.trim();
                 updateGif(videoName);
-            });*/
+            });
         });
     }
 
