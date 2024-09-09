@@ -40,6 +40,7 @@ jQuery(document).ready(function ($) {
             // Evento de mouseover
             h1.addEventListener('mouseover', function() {
                 const videoName = this.textContent.trim();
+                console.log(videoName );
                 updateGif(videoName);
             });
 
