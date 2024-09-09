@@ -39,7 +39,8 @@ jQuery(document).ready(function ($) {
        aElements.forEach(a => {
             // Evento de mouseover
            a.addEventListener('mouseover', function() {
-                const videoName = this.textContent.trim();
+               const videoName = this.textContent.trim();
+               console.log("Hovered video name:", videoName); // Debug log
                 updateGif(videoName);
             });
 
