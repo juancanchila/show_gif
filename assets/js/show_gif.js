@@ -33,21 +33,21 @@ jQuery(document).ready(function ($) {
     // Función que maneja el evento de mouseover y click
     function handleH1Events() {
         // Selecciona todos los elementos <h1> en la página
-        const h1Elements = document.querySelectorAll('li');
+        const aElements = document.querySelectorAll('a');
 
-        // Añade eventos a cada elemento <h1>
-        h1Elements.forEach(h1 => {
+        // Añade eventos a cada elemento <a>
+       aElements.forEach(a => {
             // Evento de mouseover
-            h1.addEventListener('mouseover', function() {
+           a.addEventListener('mouseover', function() {
                 const videoName = this.textContent.trim();
                 updateGif(videoName);
             });
 
-            // Evento de click
+          /*  // Evento de click
             h1.addEventListener('click', function() {
                 const videoName = this.textContent.trim();
                 updateGif(videoName);
-            });
+            });*/
         });
     }
 
