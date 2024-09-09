@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
 
     // Hacer una petición GET a nuestro endpoint personalizado
     $.ajax({
-        url: '/wordpress/wp-json/show-gif/v1/lista-videos/',
+        url: '/web/wp-json/show-gif/v1/lista-videos/',
         type: 'GET',
         success: function (data) {
             console.log("Lista de Videos:", data);
