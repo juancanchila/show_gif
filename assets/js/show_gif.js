@@ -55,7 +55,9 @@ jQuery(document).ready(function ($) {
     // Función para actualizar el GIF basado en el título
     function updateGif(videoName) {
         const gifElement = document.getElementById('dynamic-gif');
-        const videoPath = videoData[videoName];
+        const decodedVideoName = decodeURIComponent(videoName);
+
+        const videoPath = videoData[decodedVideoName];
 
         if (videoPath) {
             // Usa la URL completa directamente
